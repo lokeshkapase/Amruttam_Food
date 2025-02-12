@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.lokesh.amruttam_food"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.lokesh.amruttam_food"
