@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1092131542980",
+    "firebase_url": "https://my-project-1556067242665-default-rtdb.firebaseio.com",
+    "project_id": "my-project-1556067242665",
+    "storage_bucket": "my-project-1556067242665.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092131542980:android:d92fcb9717f39e91def691",
+        "android_client_info": {
+          "package_name": "com.lokesh.amruttam_food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092131542980-4clogipc7anvlb5s3goabcvidsc2dgss.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA53dzoiLXMywSIawwu40EouslkuV6njjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092131542980-4clogipc7anvlb5s3goabcvidsc2dgss.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
