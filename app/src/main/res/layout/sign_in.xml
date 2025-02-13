@@ -1,91 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     android:background="@android:color/white"
-    android:gravity="center">
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/sign_in_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:text="Amrutam Food"
-        android:textColor="@android:color/black"
-        android:textSize="32sp"
-        android:textStyle="bold" />
-    <ImageView
-        android:id="@+id/ivIllustration"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="24dp"
-        android:src="@drawable/log_in" />
-
-    <TextView
-        android:id="@+id/tvLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Log In"
-        android:textColor="@android:color/black"
+        android:text="@string/sign_in"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp" />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        style="@style/margins"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@drawable/ic_rounded_button"
+        android:layout_marginBottom="16dp"
+        style="@style/margins"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/ic_rounded_button"
+        android:layout_marginBottom="16dp"
+        style="@style/margins"/>
+
+    <CheckBox
+        android:id="@+id/remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/remember_me"
+        android:layout_marginBottom="16dp"
+        style="@style/margins"
+        />
 
     <TextView
-        android:id="@+id/tvSubtext"
+        android:id="@+id/forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/forgot_your_password"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_gravity="end"
         android:layout_marginBottom="24dp"
-        android:text="Please type your information"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="14sp" />
-
-    <EditText
-        android:id="@+id/etEmail"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/edit_text_background"
-        android:hint="Email Address"
-        android:inputType="textEmailAddress"
-        android:padding="12dp" />
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/edit_text_background"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:padding="12dp" />
+        style="@style/margins"/>
 
     <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="300dp"
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@android:color/black"
-        android:text="Log In"
+        android:text="@string/sign_in"
+        android:background="@drawable/ic_rounded_button"
+        android:backgroundTint="#1F2937"
         android:textColor="@android:color/white"
-        android:textStyle="bold" />
+        android:layout_marginBottom="24dp"
+        style="@style/margins"/>
 
     <TextView
-        android:id="@+id/tvNewUser"
+        android:id="@+id/or_continue_with"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="New user? "
-        android:textColor="@android:color/darker_gray"
-        android:textSize="14sp" />
-    <TextView
-        android:id="@+id/tvCreateAccount"
-        android:layout_width="wrap_content"
+        android:text="@string/or_continue_with"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        style="@style/margins"/>
+
+    <Button
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create an Account"
-        android:textColor="@android:color/holo_red_light"
-        android:textSize="14sp"
-        android:textStyle="bold" />
+        style="@style/margins"
+        android:text="@string/sign_in_with_google"
+        android:drawableStart="@drawable/google"
+        android:padding="16dp"
+        android:background="@drawable/ic_rounded_button"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp"
+        />
 
-
+    <Button
+        android:id="@+id/facebook_sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_with_facebook"
+        android:drawableStart="@drawable/ic_facebook"
+        android:padding="16dp"
+        android:background="@drawable/ic_rounded_button"
+        android:backgroundTint="#2979FF"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="24dp"
+        style="@style/margins"/>
 
 </LinearLayout>

@@ -13,11 +13,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var signIn : TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        signIn = findViewById(R.id.signIn)
-        signIn.setOnClickListener(View.OnClickListener {
-        })
-
-
-        }
+        setContentView(R.layout.sign_in)
+    }
 }
