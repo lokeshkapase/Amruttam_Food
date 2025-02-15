@@ -42,7 +42,8 @@ dependencies {
 
     implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.viewpager2)
-    implementation(libs.material.v140)
+    implementation(libs.material.v190)
+    implementation(libs.pl.android.gif.drawable)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

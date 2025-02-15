@@ -28,7 +28,10 @@ class MainActivity : AppCompatActivity() {
 
     private val itemList = listOf(
         Product("Dink Ladoo", "250 Grams", "₹150", R.drawable.dink_ladoo),
-        Product("Til Ladoo", "250 Grams", "₹200", R.drawable.til_ladoo)
+        Product("Til Ladoo", "250 Grams", "₹200", R.drawable.til_ladoo),
+        Product("Ladoo", "250 Grams", "₹200", R.drawable.til_ladoo),
+        Product("Dink Ladoo", "250 Grams", "₹150", R.drawable.dink_ladoo)
+
     )
 
     private val sliderHandler = Handler(Looper.getMainLooper())
